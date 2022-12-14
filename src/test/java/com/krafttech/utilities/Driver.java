@@ -17,7 +17,6 @@ public class Driver {
 
 
     private static WebDriver driver;
-
     public static WebDriver get() {
         // Test
         if (driver == null) {
@@ -61,12 +60,9 @@ public class Driver {
                     driver = new SafariDriver();
                     break;
             }
-
         }
-
         return driver;
     }
-
     public static void closeDriver() {
         if (driver != null) {
             driver.quit();
