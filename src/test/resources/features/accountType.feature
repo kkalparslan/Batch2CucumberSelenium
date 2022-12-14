@@ -6,16 +6,19 @@ Feature: Account Type
     When User should input "mike@gmail.com" and "mike1234"
     Then The user name should be "Harun"
 
+  @rerun
   Scenario: Second user
     Given User should be on the login page
     When User should input "eddiem@kraft.com" and "eddiem12"
     Then The user name should be "Eddie Murphy"
 
+  @rerun
   Scenario: Third user
     Given User should be on the login page
     When User should input "morganfreeman@kraft.com" and "mfreeman"
     Then The user name should be "Morgan Freeman"
 
+  @deneme
   Scenario: fourth user
     Given User should be on the login page
     When User should input "krafttech@kraft.com" and "Test1234"

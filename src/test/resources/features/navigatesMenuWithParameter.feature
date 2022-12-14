@@ -1,11 +1,11 @@
 
 Feature: Navigate to menu with parameter
 
-  @rerun
+
   Scenario: Harun navigates to Edit Profile menu
     Given User should be on the login page
     When User should input "mike@gmail.com" and "mike1234"
-    Then The user name should be "Rabinson"
+    Then The user name should be "Harun"
     When The user navigates to "Edit Profile" menu
     Then The user should be able to see home name as "Edit User Profile"
   @rerun

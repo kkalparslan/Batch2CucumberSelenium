@@ -12,12 +12,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
     private Driver() {
-
     }
-
-
     private static WebDriver driver;
-
     public static WebDriver get() {
         // Test
         if (driver == null) {
@@ -61,7 +57,6 @@ public class Driver {
                     driver = new SafariDriver();
                     break;
             }
-
         }
 
         return driver;

@@ -9,12 +9,12 @@ Feature: Krafttech Log in Test
     When The user enters Alparslan credentials
     Then The user should be able to login
 
-    @SDET
+  @rerun
   Scenario: Login as Jhon Nash
     When The user enters Jhon Nash credentials
     Then The user should be able to login
 
-  @smoke
+  @rerun
   Scenario: Login as Emel
     When The user enters Emel credentials
     Then The user should be able to login

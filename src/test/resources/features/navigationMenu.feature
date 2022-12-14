@@ -1,4 +1,4 @@
-@navigation
+
 Feature: Krafttech Dashboard Test
 
   Scenario:Login as Mike
@@ -11,6 +11,7 @@ Feature: Krafttech Dashboard Test
     When Get the text of dashboard
     And Go to Edit Profile menu and get the text of Edit User Profile
     Then The user should be able to Edit Profile module
+
 
   Scenario:Login as Jhon Nash
     Given The user is on the dashboard page
