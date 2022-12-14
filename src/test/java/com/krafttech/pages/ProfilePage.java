@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ProfilePage extends BasePage {
 
     @FindBy(xpath = "//button[.='Edit Profile'] ")
@@ -44,6 +46,12 @@ public class ProfilePage extends BasePage {
 
     @FindBy (xpath = "//input[@id='email']")
     public WebElement profilEmail_loc;
+
+    @FindBy(xpath = "(//span[.='My Profile'])[2]")
+    public WebElement myProfile_loc;
+
+    @FindBy(xpath = "//a[@class='nav-link collapsed']")
+    public List<WebElement> profileOptions_loc;
 
     public void profileTabs(String tabName){
         driver= Driver.get();

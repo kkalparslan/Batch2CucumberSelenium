@@ -18,8 +18,6 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath = "//span[@class='d-none d-md-block dropdown-toggle ps-2']")
     public WebElement userPopUp_loc;
 
-    @FindBy(xpath = "(//span[.='My Profile'])[2]")
-    public WebElement myProfile_loc;
 
     @FindBy(xpath = "//a[.='Home']")
     public WebElement homeLink_loc;
@@ -39,7 +37,7 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath = "//span[.='Modal']")
     public WebElement moduleLocator;
 
-    @FindBy(xpath = "//a[@class='nav-link nav-profile d-flex align-items-center pe-0']")
+    @FindBy(xpath = "//a[@class='nav-link nav-profile d-flex align-items-center pe-0']")////span[@class='d-none d-md-block dropdown-toggle ps-2']
     public WebElement getUserName_loc;
 
 
@@ -60,6 +58,11 @@ public class DashboardPage extends BasePage{
     public String getUserName(){
         BrowserUtils.waitForVisibility(getUserName_loc,5);
         return getUserName_loc.getText();
+    }
+
+    public String getHomeName(String homeName){
+        BrowserUtils.waitFor(1);
+        return Driver.get().findElement(By.xpath("//li[text()='"+homeName+"']")).getText();
     }
 
 }

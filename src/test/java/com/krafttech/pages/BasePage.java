@@ -15,6 +15,15 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
+    public void naviagateToTab(String tabName){
+        driver=Driver.get();
+        driver.findElement(By.xpath("//nav//span[.='"+tabName+"']")).click();
+
+    }
+
+
+
+
     public void navigateToModele(String tab, String module){
 
         String tabLocator="//span[.='"+tab+"']";
@@ -29,7 +38,6 @@ public abstract class BasePage {
         Driver.get().findElement(By.xpath(moduleLocator)).click();
 
     }
-
     public String subTitle(String subTitle){
 
         String subTitleLocator="//h1[.='"+subTitle+"']";
@@ -46,4 +54,6 @@ public abstract class BasePage {
     public String getAccountName_mtd(String accountName){
         return Driver.get().findElement(By.xpath("//span[text()='"+accountName+"']")).getText();
     }
+
+
 }
