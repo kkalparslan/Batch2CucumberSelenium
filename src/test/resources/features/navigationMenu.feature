@@ -1,25 +1,26 @@
-
+@review
 Feature: Krafttech Dashboard Test
 
-  Scenario:Login as Mike
-    Given The user is on the dashboard page
-    When Go to Developers menu and get the text of Developer
-    Then The user should be able to dashboard page
-
-  Scenario:Login as Sebastian
-    Given The user is on the dashboard page
+  Scenario: Login as Mike
+    Given The user is on the login page
     When Get the text of dashboard
-    And Go to Edit Profile menu and get the text of Edit User Profile
-    Then The user should be able to Edit Profile module
+    And Go to Developers menu
+    And Get the text of Developer
+    Then Verify that text is developer
 
-
-  Scenario:Login as Jhon Nash
-    Given The user is on the dashboard page
+  Scenario: Login as Sebastian
+    Given The user is on the login page
     When Get the text of dashboard
-    And Go to My Profile menu and get the text of User Profile
-    Then The user should be able to My Profile module
+    And Go to Edit Profile menu
+    And Get the text of Edit User Profile
+    Then Verify that text is Edit User Profile
 
-
+  Scenario: Login as Jhon Nash
+    Given The user is on the login page
+    When Get the text of dashboard
+    And Go to My Profile menu
+    And Get the text of User Profile
+    Then Verify that text is User Profile
 
 
 

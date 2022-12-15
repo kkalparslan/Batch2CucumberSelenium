@@ -5,36 +5,59 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class NavigationMenuStepDefs {
-    @Given("The user is on the dashboard page")
-    public void the_user_is_on_the_dashboard_page() {
-        System.out.println("I am on the dashboard page");
-    }
-    @When("Go to Developers menu and get the text of Developer")
-    public void go_to_developers_menu_and_get_the_text_of_developer() {
-        System.out.println("I went to the developers menu and got the text");
-    }
-    @Then("The user should be able to dashboard page")
-    public void the_user_should_be_able_to_dashboard_page() {
-        System.out.println("I am on the dashboard page");
-    }
+
     @When("Get the text of dashboard")
-    public void getTheTextOfDashboard() {
-        System.out.println("I got the text of dashboard");
+    public void get_the_text_of_dashboard() {
+        System.out.println("I got text of dashboard ");
+
     }
-    @And("Go to Edit Profile menu and get the text of Edit User Profile")
-    public void goToEditProfileMenuAndGetTheTextOfEditUserProfile() {
-        System.out.println("I went to the Edit Profile menu and got the text");
+    @When("Go to Developers menu")
+    public void go_to_developers_menu() {
+        System.out.println("I went to developers menu ");
+
     }
-    @Then("The user should be able to Edit Profile module")
-    public void theUserShouldBeAbleToEditProfileModule() {
-        System.out.println("I am on the Edit Profile module");
+    @When("Get the text of Developer")
+    public void get_the_text_of_developer() {
+        System.out.println("I got text of developers ");
+
     }
-    @And("Go to My Profile menu and get the text of User Profile")
-    public void goToMyProfileMenuAndGetTheTextOfUserProfile() {
-        System.out.println("I went to the My Profile menu and got the text");
+    @Then("Verify that text is developer")
+    public void verify_that_text_is_developer() {
+        System.out.println("Developers text is true ");
+
     }
-    @Then("The user should be able to My Profile module")
-    public void theUserShouldBeAbleToMyProfileModule() {
-        System.out.println("I am on the My Profile module");
+
+    @When("Go to Edit Profile menu")
+    public void go_to_edit_profile_menu() {
+        System.out.println("I went to Edit Profile menu ");
+
     }
+    @When("Get the text of Edit User Profile")
+    public void get_the_text_of_edit_user_profile() {
+        System.out.println("I got text of Edit User Profile ");
+
+    }
+    @Then("Verify that text is Edit User Profile")
+    public void verify_that_text_is_edit_user_profile() {
+        System.out.println("Edit User Profile text is true ");
+
+    }
+
+    @When("Go to My Profile menu")
+    public void go_to_my_profile_menu() {
+        System.out.println("I went to My Profile menu ");
+
+    }
+    @When("Get the text of User Profile")
+    public void get_the_text_of_user_profile() {
+        System.out.println("I got text of User Profile ");
+
+    }
+    @Then("Verify that text is User Profile")
+    public void verify_that_text_is_user_profile() {
+        System.out.println("User profile text is true ");
+
+    }
+
+
 }
