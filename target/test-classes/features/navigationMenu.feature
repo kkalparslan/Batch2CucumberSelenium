@@ -24,13 +24,6 @@ Feature: Krafttech Dashboard Test
 
 
 
-
-
-
-
-
-
-
     # Create new feature file navigationMenu.feature and write
     #    scenarios for given requirements and test case.
     #    Try to reuse steps from previous feature file.
