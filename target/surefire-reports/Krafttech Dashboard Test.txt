@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Krafttech Dashboard Test
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.14 s <<< FAILURE! - in Krafttech Dashboard Test
-Krafttech Dashboard Test.Login as Jhon Nash  Time elapsed: 0.14 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
-	at com.krafttech.utilities.Driver.closeDriver(Driver.java:76)
-	at com.krafttech.step_definitions.Hooks.tearDown(Hooks.java:27)
-

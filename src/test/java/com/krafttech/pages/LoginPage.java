@@ -42,7 +42,7 @@ public class LoginPage extends BasePage{
     }
     public String getWarninMessageText(String message){
        return Driver.get().findElement(By.xpath("//*[contains(text(),'"+message+"')]")).getText();
-    }
+       }
 
 }
 

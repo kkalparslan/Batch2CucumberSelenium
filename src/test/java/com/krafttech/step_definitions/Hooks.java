@@ -10,14 +10,14 @@ import org.openqa.selenium.TakesScreenshot;
 public class Hooks {
     @Before
     public void setUp(){
-        System.out.println("\tThis is coming from Before Method");
+        //System.out.println("\tThis is coming from Before Method");
         //Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //Driver.get().manage().window().maximize();
     }
     @After
     public void tearDown(Scenario scenario){  // after method kendisinden önceki scenario fail olsa bile çalışır..
                              // buradan hooks ile .feature file arasında bir bağlantı olmadığını anlıyoruz
-        System.out.println("\tThis is coming from After Method");
+        //System.out.println("\tThis is coming from After Method");
         if(scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");
