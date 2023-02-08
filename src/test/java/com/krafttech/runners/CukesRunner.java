@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         dryRun = false,  //dryRun'ın default değeri false..features a undefined bir scienario eklendiği
                          //zaman o seneryo ya ait cucumber ihtiyaç olan methodu oluşturuyor. sadece bu
                          //tanımsız senaryoyu yürütmek için dryRun=true olmalıdır..
-        tags = "@rerunWith"  // tags de "@...and not @..." yapılırsa ilk tag çalışırken ikinci
+        tags = "@hook"  // tags de "@...and not @..." yapılırsa ilk tag çalışırken ikinci
                          // tag e sahip olanları yürütmüyor
 
 )

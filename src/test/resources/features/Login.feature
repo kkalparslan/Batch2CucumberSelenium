@@ -46,6 +46,7 @@ Feature: Krafttech Log in Test
       | password | 12345678      |
       | Name     | Alparslan     |
 
+    @hook
   Scenario Outline: Data table and scenario outline
     Then User should input following credantials
 
