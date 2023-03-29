@@ -27,7 +27,6 @@ public class LoginPage extends BasePage{
     public WebElement warningMessage_loc;
 
     public void loginUser(){
-
         String username= ConfigurationReader.get("userEmail");
         String password=ConfigurationReader.get("password");
 
@@ -43,7 +42,6 @@ public class LoginPage extends BasePage{
     public String getWarninMessageText(String message){
        return Driver.get().findElement(By.xpath("//*[contains(text(),'"+message+"')]")).getText();
        }
-
 }
 
 

@@ -10,7 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
     WebDriver driver;
-
     public BasePage(){
         PageFactory.initElements(Driver.get(), this);
     }
@@ -45,6 +44,4 @@ public abstract class BasePage {
     public String getAccountName_mtd(String accountName){
         return Driver.get().findElement(By.xpath("//span[text()='"+accountName+"']")).getText();
     }
-
-
 }

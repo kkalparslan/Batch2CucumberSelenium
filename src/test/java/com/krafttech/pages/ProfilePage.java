@@ -61,7 +61,6 @@ public class ProfilePage extends BasePage {
         WebElement tabElement= driver.findElement(By.xpath(tabLocator));
         tabElement.click();
     }
-
    @FindBy(xpath = "//input[@placeholder='Job Title *']")
     public WebElement jobTitle;
 
@@ -82,6 +81,4 @@ public class ProfilePage extends BasePage {
 
     @FindBy(xpath = "//button[@value='experience']")
     public WebElement addExperienceBtn;
-
-
 }
