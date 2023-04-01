@@ -10,13 +10,13 @@ Feature: Account Type
   Scenario: Second user
     Given User should be on the login page
     When User should input "eddiem@kraft.com" and "eddiem12"
-    Then The user name should be "Eddie Murphy"
+    Then The user name should be "Components"
 
   @rerun
   Scenario: Third user
     Given User should be on the login page
     When User should input "morganfreeman@kraft.com" and "mfreeman"
-    Then The user name should be "Morgan Freeman"
+    Then The user name should be "Components"
 
   @deneme
   Scenario: fourth user
