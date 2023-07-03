@@ -56,8 +56,5 @@ public class NavigationMenuStepDefs {
     @Then("Verify that text is User Profile")
     public void verify_that_text_is_user_profile() {
         System.out.println("User profile text is true ");
-
     }
-
-
 }

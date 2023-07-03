@@ -16,16 +16,12 @@ public class LoginPage extends BasePage{
 //    }
     @FindBy(name = "email")
     public WebElement userEmailInput_loc;
-
     @FindBy(name = "password")
     public WebElement passwordInput_loc;
-
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton_loc;
-
     @FindBy(xpath = "//*[contains(text(),'Email address or password is incorrect')]")
     public WebElement warningMessage_loc;
-
     public void loginUser(){
         String username= ConfigurationReader.get("userEmail");
         String password=ConfigurationReader.get("password");
