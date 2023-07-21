@@ -24,7 +24,7 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     /**
-                     * Chrome options have to be changed a lttle in selenıum 4..
+                     * Chrome options have to be changed a little in selenıum 4..
                      */
                     break;
                 case "chrome-headless":
