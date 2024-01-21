@@ -43,7 +43,6 @@ public class ProfileStepDefs {
         profilePage.skills.sendKeys("Postman, RestAssured, API, SQL");
 
         BrowserUtils.clickWithJS(profilePage.save);
-
     }
     @Then("User should verify profile updated message")
     public void user_should_verify_profile_updated_message() {
@@ -51,7 +50,6 @@ public class ProfileStepDefs {
         String expectedMsg="Profile Updated";
         Assert.assertEquals(expectedMsg, actulaMsg);
     }
-
     @Then("User should see the profile options")
     public void user_should_see_the_profile_options(List<String> profileOptions) {
         List<String>actualOptions=BrowserUtils.getElementsText(profilePage.profileOptions_loc);
