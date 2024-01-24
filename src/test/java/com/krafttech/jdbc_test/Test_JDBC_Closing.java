@@ -45,6 +45,5 @@ public class Test_JDBC_Closing {
         }
         System.out.println("resultSet.next() = " + resultSet.next());// yukarıda finally block içinde connectionlar
         // kapandığı için sout hata verir..
-
     }
 }

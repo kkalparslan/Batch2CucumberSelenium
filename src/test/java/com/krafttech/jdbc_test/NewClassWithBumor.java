@@ -16,8 +16,5 @@ public class NewClassWithBumor {
         Statement statement=connection.createStatement();
         ResultSet resultSet= statement.executeQuery(query);
         System.out.println("connetcion is success");
-
-
     }
-
 }
