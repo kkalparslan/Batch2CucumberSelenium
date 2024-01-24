@@ -58,6 +58,5 @@ public class ProfileStepDefs {
         System.out.println("profileOptions = " + profileOptions);
 
         Assert.assertEquals(profileOptions, actualOptions);
-
     }
 }

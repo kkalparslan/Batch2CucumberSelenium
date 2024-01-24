@@ -25,7 +25,6 @@ public class JDBC_Utilities {
         getRowDataAsList(1);
 
         closeJDBC();
-
     }
 
     public static void connectJdbc() {
@@ -181,7 +180,5 @@ public class JDBC_Utilities {
         }
         return cellData;
     }
-
-
 }
 

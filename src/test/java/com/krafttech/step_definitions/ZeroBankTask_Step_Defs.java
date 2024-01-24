@@ -4,7 +4,7 @@ public class ZeroBankTask_Step_Defs {
 
     /**
      * Zero Bank Test Automation Task 1
-     * TANIM
+     * TANIM:
      * Bu odevde online bir bankacilik uygulamasi ile ilgili test otomasyonu yapacaksiniz.
      * Framework icin Cucumber BDD ve Selenium kullancaksiniz.
      *

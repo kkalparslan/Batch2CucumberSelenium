@@ -1,3 +1,4 @@
+
 1- birden fazla testi aynı anda birden fazla browser da yürütebilmek için pom xml e aşağıdaki
 eklemeyi yaptık:
         <parallel>methods</parallel>

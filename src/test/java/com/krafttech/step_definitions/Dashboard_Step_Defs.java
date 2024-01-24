@@ -27,5 +27,4 @@ public class Dashboard_Step_Defs {
         String actualHomeName=dashboardPage.getHomeName(expectedHomeName);
         Assert.assertEquals("Verify that home name is display", expectedHomeName, actualHomeName);
     }
-
 }
