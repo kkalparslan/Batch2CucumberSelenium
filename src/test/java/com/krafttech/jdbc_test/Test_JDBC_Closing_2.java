@@ -33,5 +33,4 @@ public class Test_JDBC_Closing_2 {
         }
         System.out.println("connection kapandı");
     }
-
 }

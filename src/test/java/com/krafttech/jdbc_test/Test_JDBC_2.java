@@ -29,9 +29,6 @@ public class Test_JDBC_2 {
 //            resultSet.next();
 //            System.out.println(resultSet.getRow()+".sıra --> "+ resultSet.getString(2));
 
-
-
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
