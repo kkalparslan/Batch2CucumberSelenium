@@ -1,2 +1,1 @@
-file:src/test/resources/features/Login.feature:13:18
-file:src/test/resources/features/accountType.feature:10:16
+file:src/test/resources/features/Login.feature:23
