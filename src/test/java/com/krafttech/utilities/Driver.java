@@ -23,6 +23,8 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
+                    //System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
+                    //buraya kendi chromeDriver ımızın path i eklenmelidir
                     /**
                      * Chrome options have to be changed a little in selenıum 4..
                      */
