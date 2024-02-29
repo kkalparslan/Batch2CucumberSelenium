@@ -21,7 +21,8 @@ public class Driver {
             String browser = ConfigurationReader.get("browser");
             switch (browser) {
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
+                   // WebDriverManager.chromedriver().setup();
+                    WebDriverManager.chromedriver().clearDriverCache().setup();
                     driver = new ChromeDriver();
                     //System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
                     //buraya kendi chromeDriver ımızın path i eklenmelidir
